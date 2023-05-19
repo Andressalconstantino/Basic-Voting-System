@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+
+:root {
+    --contrast-color: #9888a0;
+    --bg-color: #0d0d0d;
+  }
+/* HIDE RADIO */
+  [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+    height: 450px;
+    width: 300px;
+  }
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 4px solid var(--contrast-color);
+  }
+  [type=submit] { 
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+    align-self: center;
+    background-color: var(--contrast-color);
+    border: none;
+    border-radius: 3px;
+    color: var(--bg-color);;
+    font-size: 22px;
+    transition: 0.2s;
+  }
+  [type=submit]:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+  body{
+    display: flex;
+    background-color: var(--bg-color);
+    font-family: 'Wix Madefor Display', sans-serif;
+  }
+  form {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  form div{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+  }
+  h1{
+    color: var(--contrast-color);
+    text-align: center;
+  }
+  #box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    color: var(--contrast-color);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  #box form{
+    height: 10%;
+  }  
+  #box form button{
+    width: 5%;
+    height: 80%;
+    cursor: pointer;
+    background-color: var(--contrast-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+
+  #results-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 97%;
+    height: 95vh;
+    color: var(--contrast-color);
+  }
+  #results-box span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 20%;
+  }
+  #participants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #participants img{
+    height: 300px;
+    width: 200px;
+  }
+  #winner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  #winner img {
+    height: 300px;
+    width: 200px;
+    outline: 4px solid var(--contrast-color);
+  }

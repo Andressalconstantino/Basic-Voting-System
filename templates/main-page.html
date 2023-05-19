@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vote</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+
+    <body>
+        <form action="http://127.0.0.1:5000/success" method="post">
+            <h1>Vote for the best artwork</h1>
+            <div>
+                <label>
+                    <input type="radio" name="vote" value="artwork1">
+                    <img src="/static/images/artwork1.jpg" alt="Artwork 1">
+                </label>
+                <label>
+                    <input type="radio" name="vote" value="artwork2">
+                    <img src="/static/images/artwork2.jpg" alt="Artwork 2">
+                </label>
+                <label>
+                    <input type="radio" name="vote" value="artwork3">
+                    <img src="/static/images/artwork3.jpg" alt="Artwork 3">
+                </label>
+                <label>
+                    <input type="radio" name="vote" value="artwork4">
+                    <img src="/static/images/artwork4.jpg" alt="Artwork 4">
+                </label>
+                <label>
+                    <input type="radio" name="vote" value="artwork5">
+                    <img src="/static/images/artwork5.jpg" alt="Artwork 5">
+                </label>
+            </div>
+            <button type="submit">Vote</button>
+        </form>
+    </body>
+</html>
